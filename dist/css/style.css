@@ -1,19 +1,38 @@
 body{
 	background-color: #465164;
+	transition: background-color 3s ease;
+	-webkit-transition: background-color 3s ease;
+	-moz-transition: background-color 3s ease;
+	-o-transition: background-color 3s ease;
+	-ms-transition: background-color 3s ease;
 }
 .bigbox {
 	margin-top: 20%;
 	overflow: hidden;
 }
 #clock{
-	color:#8D7D55;
-	font-size:100px;
+	color:#FFFFFF;
+	font-size:45px;
 	margin:0 auto;
 	text-align: center;
 }
+#clock:hover{
+	font-size:90px;
+}
 
-@media (max-width: 650px){
+@media (min-width: 550px){
 	#clock{
-		font-size: 75px;
+		 font-size: 80px;
+		transition: font-size ease 1s;
+		
+	}
+}
+@media (max-width: 550px){
+	#clock{
+		font-size: 55px;
+		transition: font-size ease 1s;
+	}
+	#clock:hover{
+		font-size:65px;
 	}
 }
