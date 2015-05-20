@@ -1,0 +1,19 @@
+body{
+	background-color: #465164;
+}
+.bigbox {
+	margin-top: 20%;
+	overflow: hidden;
+}
+#clock{
+	color:#8D7D55;
+	font-size:100px;
+	margin:0 auto;
+	text-align: center;
+}
+
+@media (max-width: 650px){
+	#clock{
+		font-size: 75px;
+	}
+}
